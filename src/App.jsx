@@ -9,10 +9,18 @@ import WorkExperience from './components/WorkExperience'
 import ProjectsBuilt from './components/ProjectsBuilt'
 import Achievements from './components/Achievemrnts'
 import ContactMe from './components/ContactMe'
+import { useRef } from 'react'
+
 function App() {
 
+  const main = useRef(null);
+
+  const handleLoad = () => {
+    main.current.classList.add('animate-loading');
+  }
+
   return (
-    <div className=' flex flex-col h-screen w-full'>
+    <div onLoad={handleLoad} ref={main} className='flex flex-col h-screen w-full'>
         <NavBar/>
         <Intro/>
         <AboutMe/>

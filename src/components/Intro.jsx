@@ -3,8 +3,6 @@ import PP from '../assets/PP.png'
 import Typing from './Typing'
 import Icon from '@mdi/react';
 import { mdiHandWave } from '@mdi/js';
-import "./wavingHandAnimation.css";
-
 
 function Intro() {
     return (
@@ -19,7 +17,9 @@ function Intro() {
                 <div className='mb-3'><h5 className='font-sanif text-blue-800'>WELCOME TO MY CREATIVE JOURNEY</h5></div>
                 <div className="flex flex-row mb-3">
                     <h1>Hi , I'm Bhav Jain</h1>
-                    <Icon class="wavingHand" path={mdiHandWave} size={2} color="yellow" />
+                    <div className="animate-wave mx-4">
+                        <Icon path={mdiHandWave} size={2} color="yellow" />
+                    </div>
                 </div>
                 <div className='mb-3'>
                     <Typing text={["I am a CS Undergrad", "I am a Software Developer", "I have good skills in JAVA, React and Python"]}/>
