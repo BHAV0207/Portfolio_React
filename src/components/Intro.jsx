@@ -1,8 +1,14 @@
 import BHAVpHOTO from '../assets/BHAVpHOTO.png';
 import PP from '../assets/PP.png'
+import Typing from './Typing'
+import Icon from '@mdi/react';
+import { mdiHandWave } from '@mdi/js';
+import "./wavingHandAnimation.css";
+
+
 function Intro() {
     return (
-        <div className='flex h-[70vh] p-12 w-full justify-between ' style={{
+        <div id='home' className='flex h-[70vh] mt-[50px] p-12 w-full justify-between ' style={{
             backgroundImage:`url(${PP})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -13,12 +19,14 @@ function Intro() {
                 <div className='mb-3'><h5 className='font-sanif text-blue-800'>WELCOME TO MY CREATIVE JOURNEY</h5></div>
                 <div className="flex flex-row mb-3">
                     <h1>Hi , I'm Bhav Jain</h1>
-                    <i class="fa-solid fa-skull-crossbones"></i>
+                    <Icon class="wavingHand" path={mdiHandWave} size={2} color="yellow" />
                 </div>
-                <div className='mb-3'><h2 className='font-mono  text-3xl font text-purple-700'>A good Software Engineer</h2></div>
+                <div className='mb-3'>
+                    <Typing text={["I am a CS Undergrad", "I am a Software Developer", "I have good skills in JAVA, React and Python"]}/>
+                </div>
                 <div className='flex space-x-7 mb-3'>
-                    <button className='font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'>Resume</button>
-                    <button className=' font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'>Info</button>
+                    <button className='font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'><a className='text-white font-bold hover:text-red-600' href="#skills">Resume</a></button>
+                    <button className=' font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'><a className='text-white font-bold hover:text-red-600' href="#workexp">Info</a></button>
                 </div>
             </div>
 

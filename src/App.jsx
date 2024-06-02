@@ -4,7 +4,11 @@ import Intro from './components/Intro'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Services from './components/Services'
+import AcademicQualifications from './components/AcademicQualifications'
 import WorkExperience from './components/WorkExperience'
+import ProjectsBuilt from './components/ProjectsBuilt'
+import Achievements from './components/Achievemrnts'
+import ContactMe from './components/ContactMe'
 function App() {
 
   return (
@@ -13,8 +17,12 @@ function App() {
         <Intro/>
         <AboutMe/>
         <Skills/>
+        <ProjectsBuilt/>
         <Services/>
         <WorkExperience/>
+        <AcademicQualifications/>
+        <Achievements/>
+        <ContactMe/>
     </div>
     
   )

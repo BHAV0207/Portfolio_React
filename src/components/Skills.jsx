@@ -11,9 +11,9 @@ import BOOTSTRAP from  '../assets/BOOTSTRAP.png'
 
 function Skills(){
     return(
-        <div className="flex flex-col bg-[#1F2235]">
+        <div id='skills' className="flex flex-col bg-[#1F2235]">
             <div className="flex flex-col items-center">
-                <div className="flex font-mono"><h1 className="text-4xl font-bold mt-[5rem]">What Am I Good At</h1></div>
+                <div className="flex font-mono"><h1 className="text-4xl font-bold mt-[7rem]">What Am I Good At</h1></div>
                 <div className="w-[10rem] h-[0.3rem] bg-red-600 mt-5"></div>
             </div>
             <div className="flex items-center flex-col">

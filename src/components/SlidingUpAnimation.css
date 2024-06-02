@@ -1,0 +1,34 @@
+.SlidingUpAni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .SlidingUpAni{
+    height: 100px;
+    transition: transform 1s ease-in-out;
+    transform: translateY(100%);
+}
+
+
+.SlidingUpAni.active{
+    transform: translateY(0);
+  } */
+
+
+.SlidingUpAni{
+    /* Initial styles for the element (optional) */
+    height: 100px; /* Adjust height as needed */
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .SlidingUpAni.active {
+    animation: slide-up 1s ease-in-out forwards;
+    opacity: 1; /* Now visible */
+  }
+  
+  @keyframes slide-up {
+    from { transform: translateY(100%); } /* Start from bottom */
+    to { transform: translateY(0); } /* Slide up to top */
+  }
+  

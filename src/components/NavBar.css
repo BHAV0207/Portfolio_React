@@ -1,0 +1,16 @@
+
+.Nav-item a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    position:absolute;
+    bottom: 5%;
+    background-color: red;
+    transition: width 0.6s ease ;
+}
+
+.Nav-item a:hover::after{
+    width: 100%;
+}
+
