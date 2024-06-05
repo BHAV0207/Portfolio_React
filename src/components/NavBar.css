@@ -5,7 +5,7 @@
     height: 4px;
     width: 0;
     position:absolute;
-    bottom: 5%;
+    bottom: 15%;
     background-color: red;
     transition: width 0.6s ease ;
 }
