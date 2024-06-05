@@ -14,7 +14,7 @@ function Achievements(){
                 </div>
             </div>
 
-            <div className=" flex justify-center w-[50%]">
+            <div className=" flex justify-center">
                 <div className="bg-[rgb(31,34,53)] flex flex-col items-center w-[25rem] h-[35rem]">
                     <div><Carousel
                             autoplay

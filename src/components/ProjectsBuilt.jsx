@@ -19,7 +19,7 @@ function ProjectsBuilt(){
                 </div>
             </div>
 
-            <div className=" flex justify-center w-[50%]">
+            <div className=" flex justify-center ">
                 <div className="bg-[#272A3F] flex flex-col items-center w-[25rem] h-[35rem]">
                     <div><Carousel
                             autoplay

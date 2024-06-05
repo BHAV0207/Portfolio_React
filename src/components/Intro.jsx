@@ -21,10 +21,10 @@ function Intro() {
                         <Icon path={mdiHandWave} size={2} color="yellow" />
                     </div>
                 </div>
-                <div className='mb-3'>
+                <div className='mb-3 '>
                     <Typing text={["I am a CS Undergrad", "I am a Software Developer", "I have good skills in JAVA, React and Python"]}/>
                 </div>
-                <div className='flex space-x-7 mb-3'>
+                <div className='flex space-x-7 mb-3 mt-7'>
                     <button className='font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'><a className='text-white font-bold hover:text-red-600' href="#skills">Resume</a></button>
                     <button className=' font-bold font-mono bg-red-600 text-white rounded-3xl hover:bg-white transition duration-500 ease-in-out transform hover:text-red-600'><a className='text-white font-bold hover:text-red-600' href="#workexp">Info</a></button>
                 </div>
